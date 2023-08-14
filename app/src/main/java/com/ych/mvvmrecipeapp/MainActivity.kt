@@ -3,6 +3,8 @@ package com.ych.mvvmrecipeapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -16,31 +18,36 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MvvmRecipeAppTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+            Row{
+//                MessageCard("Hello")
+                MessageCard2(Message("Android", "Jetpack Compose"))
             }
         }
+
+//        setContent {
+//            MvvmRecipeAppTheme {
+//                // A surface container using the 'background' color from the theme
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colorScheme.background
+//                ) {
+//                    Greeting("Android")
+//                }
+//            }
+//        }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+private fun MessageCard(s: String) {
+    Text(text = "$s World~~~~")
 }
 
-@Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    MvvmRecipeAppTheme {
-        Greeting("Android")
-    }
+private fun MessageCard2(message: Message) {
+    Text(text = message.author)
+    Text(text = message.body)
 }
+
+data class Message(val author: String, val body: String)
+
