@@ -10,7 +10,7 @@ Row：可让您水平排列元素，相当于LinearLayout设置了android:orient
 
 
 ### 修饰符：
-size：设置组件的实际大小
+size：设置组件的实际大小\n
 align：设置其对齐方式
 requiredSize：设置组件所需的最小尺寸
 padding：设置组件周围留出空间（padding 修饰符应用在 clickable后面否则无效）
