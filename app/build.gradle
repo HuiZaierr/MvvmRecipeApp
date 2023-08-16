@@ -5,6 +5,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+
 android {
     namespace Application.applicationId
     compileSdk Application.compileSdk
@@ -36,7 +37,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    //用于启用或禁用 Gradle 构建功能。
+    //compose true 用于启用或禁用 Compose 功能
     buildFeatures {
         compose true
     }
