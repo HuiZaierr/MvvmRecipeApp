@@ -5,6 +5,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+
 android {
     namespace Application.applicationId
     compileSdk Application.compileSdk
