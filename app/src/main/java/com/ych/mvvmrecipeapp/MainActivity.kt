@@ -16,6 +16,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Row(Modifier.fillMaxWidth()){
 //                MessageCard("Hello")
+                Text(text = "哈哈哈", modifier = Modifier.weight(1f))
                 MessageCard2(Message("Android", "Jetpack Compose"))
             }
         }
