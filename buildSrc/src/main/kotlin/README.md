@@ -7,3 +7,5 @@ https://developer.android.com/jetpack/androidx/releases/compose-kotlin?hl=zh-cn<
 # 3.修饰符列表
 https://developer.android.com/jetpack/compose/modifiers-list?hl=zh-cn</br>
 
+# 4.Bom映射表
+https://developer.android.google.cn/jetpack/compose/bom/bom-mapping?hl=zh-cn</br>

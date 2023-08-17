@@ -9,7 +9,7 @@
 2. Row：可让您水平排列元素，相当于LinearLayout设置了android:orientation="horizontal",但是不能滚动
 3. Surface：用于装饰其他组件的组件，可以用于添加阴影、边框和背景色等效果
 4. Box：它就是一个盒子,通过修饰符设置大小，背景等
-5. Spacer：间隔符，用于设置一个空白的位置
+5. Spacer：间隔符，用于填充一个空白的位置
 
 
 ### 修饰符：
@@ -18,6 +18,8 @@
 2. align：设置其对齐方式
    1. 在一个Column列表中，子元素只能水平对齐
    2. 在一个Row行表中，子元素只能垂直对齐
+   3. Column中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置verticalArrangement
+   4. Row中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置horizontalArrangement
 3. border：设置边框
 4. requiredSize：设置组件所需的最小尺寸
 5. padding：设置组件周围留出空间（padding 修饰符应用在 clickable后面否则无效）
