@@ -41,8 +41,8 @@ object Compose {
 
     //Compose其他
     private const val constraintLayoutComposeVersion = "1.0.1"
-    private const val composeActivitiesVersion = ":1.5.1"
-    private const val composeCompilerVersion = ":1.5.0"
+    private const val composeActivitiesVersion = "1.5.1"
+    private const val composeCompilerVersion = "1.5.0"
     private const val composeNavigationVerson = "2.7.0"
 
     const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:${constraintLayoutComposeVersion}"

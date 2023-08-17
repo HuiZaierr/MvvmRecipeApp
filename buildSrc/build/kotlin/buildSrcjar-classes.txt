@@ -1,1 +1,0 @@
-D:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Application.class;D:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Build.class
