@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-F:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Application.class;F:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Build.class
-=======
 D:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Application.class;D:\Develops\GitHub\MvvmRecipeApp\buildSrc\build\classes\kotlin\main\Build.class
->>>>>>> e77bc4da9ec3f2021895298dd7296fc4de8bf2ed

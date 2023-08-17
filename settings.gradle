@@ -1,3 +1,4 @@
+//pluginManagement 块应该位于 settings.gradle 文件的最前面
 pluginManagement {
     repositories {
         google()

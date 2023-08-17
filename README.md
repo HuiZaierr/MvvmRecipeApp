@@ -11,6 +11,7 @@ Spacer：间隔符
 
 
 ### 修饰符：
+**https://developer.android.com/jetpack/compose/modifiers-list?hl=zh-cn</br>**
 size：设置组件的实际大小<br>
 align：设置其对齐方式<br>
 requiredSize：设置组件所需的最小尺寸<br>
@@ -26,3 +27,10 @@ width：设置宽度<br>
 weight：设置权重，单位为float，只能用于Row中<br>
 clip(CircleShape)：将图像剪辑成圆形<br>
 clickable：设置点击<br>
+
+
+### 存储可变状态
+remember：用于在组件中存储可变状态。<br>
+mutableStateOf：用于创建一个可变状态。它返回一个包含可变状态的对象，可以在组件中使用。当可变状态的值发生变化时，Compose 会自动触发重组过程，重新计算组件的布局和绘制<br>
+mutableStateListOf：用于创建一个可变的列表。它返回一个包含可变列表的对象，可以在组件中使用。当列表的内容发生变化时，Compose 会自动触发重组过程，重新计算组件的布局和绘制<br>
+
