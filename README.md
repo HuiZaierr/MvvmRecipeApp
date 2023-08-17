@@ -7,13 +7,18 @@
 ### 布局：
 Colum：可让您垂直排列元素，相当于LinearLayout设置了android:orientation="vertical",但是不能滚动<br>
 Row：可让您水平排列元素，相当于LinearLayout设置了android:orientation="horizontal",但是不能滚动<br>
-Spacer：间隔符
+Surface：用于装饰其他组件的组件，可以用于添加阴影、边框和背景色等效果<br>
+Box：它就是一个盒子,通过修饰符设置大小，背景等<br>
+Spacer：间隔符，用于设置一个空白的位置<br>
 
 
 ### 修饰符：
 **https://developer.android.com/jetpack/compose/modifiers-list?hl=zh-cn</br>**
 size：设置组件的实际大小<br>
 align：设置其对齐方式<br>
+1. 在一个Column列表中，子元素只能水平对齐
+2. 在一个Row行表中，子元素只能垂直对齐
+border：设置边框<br>
 requiredSize：设置组件所需的最小尺寸<br>
 padding：设置组件周围留出空间（padding 修饰符应用在 clickable后面否则无效）<br>
 paddingFromBaseline：可在基线的上下添加padding<br>
