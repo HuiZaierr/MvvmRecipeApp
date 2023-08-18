@@ -36,6 +36,7 @@ class RecipeListFragment : Fragment() {
                 Text(text = "Compose Recipe List")
             }
         }
+
         //3.当某些自定义View不支持Compose时，我们还得使用layout文件，只是可以采用ComposeView声明在XML中
         var view = inflater.inflate(R.layout.fragment_recipe_list, container, false)
         view.findViewById<ComposeView>(R.id.compose_view).setContent {

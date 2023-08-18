@@ -12,12 +12,10 @@ class RecipeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { 
-            Text(text = "张三，李四，王五")
-        }
-//        setContentView(R.layout.activity_recipe)
-//
-//        supportFragmentManager.beginTransaction().replace(R.id.main_container, RecipeListFragment())
-//            .commit()
+//        setContent {}
+
+        setContentView(R.layout.activity_recipe)
+        supportFragmentManager.beginTransaction().replace(R.id.main_container, RecipeListFragment())
+            .commit()
     }
 }
