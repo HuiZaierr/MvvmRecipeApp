@@ -4,7 +4,7 @@ import AndroidX                            //AndroidX相关
 import Kotlin                              //Kotlin相关
 
 plugins {
-    id 'com.android.application'
+    id "com.android.application"
     id 'org.jetbrains.kotlin.android'
 }
 

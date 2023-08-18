@@ -6,9 +6,58 @@
     ```
      <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
     ```
-2. 继承ComponentActivity的Activity它的主题一定需要以  android:Theme开头的
+2. 继承ComponentActivity的Activity它的主题没有限定  android:Theme开头的是系统自带的主题方便开发
     ```
     <style name="Theme.MvvmRecipeApp" parent="android:Theme.Material.Light.NoActionBar" />
+    ```
+3. 当我们在布局文件中想使用一部分为Compose时，我们可以采用ComposeView组件声明
+    ```
+    //1.布局文件
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.compose.ui.platform.ComposeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/compose_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   
+   //2.Activity/Fragment等代码
+   view.findViewById<ComposeView>(R.id.compose_view).setContent {
+            Column(
+                modifier = Modifier
+                    .padding(all = 10.dp)
+                    .border(border = BorderStroke(width = 1.dp, color = Color.LightGray))
+            ) {
+                Text(text = "自定义View，不支持Compose时，采用ComposeView")
+                Spacer(modifier = Modifier.padding(10.dp))
+
+                //进度条旋转的
+                CircularProgressIndicator()
+                Spacer(modifier = Modifier.padding(10.dp))
+                Text(text = "NEAT")
+            }
+        }
+    ```
+4. 当我们在Kotlin中开发不想使用布局文件，我们可以通过setContent{} 以及 ComposeView
+    ```
+    //1.Activity中使用
+    setContent { 
+            Text(text = "张三，李四，王五")
+    }
+   
+    //2.Fragment中使用
+    return ComposeView(requireContext()).apply {
+            setContent {
+                Text(text = "Compose Recipe List")
+            }
+        }
     ```
    
 ### 注解：
