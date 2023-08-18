@@ -78,8 +78,8 @@
 2. align：设置其对齐方式
    1. 在一个Column列表中，子元素只能水平对齐
    2. 在一个Row行表中，子元素只能垂直对齐
-   3. Column中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置verticalArrangement
-   4. Row中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置horizontalArrangement
+   3. Column中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置verticalArrangement以及horizontalAlignment结合
+   4. Row中想要将其子元素进行居中或者其他方式对齐只能通过在父组件上进行设置horizontalArrangement以及verticalAlignment结合
 3. border：设置边框
 4. requiredSize：设置组件所需的最小尺寸
 5. padding：设置组件周围留出空间（padding 修饰符应用在 clickable后面否则无效）
