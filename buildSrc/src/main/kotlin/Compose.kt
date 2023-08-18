@@ -7,6 +7,7 @@ object Compose {
     //Bom的映射
     const val composeBom = "androidx.compose:compose-bom:2022.10.00"
 
+    //----------------------- 下面所有依赖性都是随着box的映射版本 start-----------------------
     const val animation = "androidx.compose.animation:animation"
     const val animationCore = "androidx.compose.animation:animation-core"
     const val animationGraphics = "androidx.compose.animation:animation-graphics"
@@ -38,6 +39,7 @@ object Compose {
     const val uiUnit = "androidx.compose.ui:ui-unit"
     const val uiUtil = "androidx.compose.ui:ui-util"
     const val uiViewbinding = "androidx.compose.ui:ui-viewbinding"
+    //----------------------- 下面所有依赖性都是随着box的映射版本 end-----------------------
 
     //Compose其他
     private const val constraintLayoutComposeVersion = "1.0.1"

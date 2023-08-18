@@ -1,5 +1,16 @@
 # MvvmRecipeApp
 
+### Compose和Kotlin进混合开发
+#### 注意
+1. 继承AppCompatActivity的Activity它的主题一定需要以  Theme.XXX开头的
+    ```
+     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+    ```
+2. 继承ComponentActivity的Activity它的主题一定需要以  android:Theme开头的
+    ```
+    <style name="Theme.MvvmRecipeApp" parent="android:Theme.Material.Light.NoActionBar" />
+    ```
+   
 ### 注解：
 @Preview：它用于预览函数
 注意：该注解必须用于不接受参数的可组合函数
