@@ -9,3 +9,6 @@ https://developer.android.com/jetpack/compose/modifiers-list?hl=zh-cn</br>
 
 # 4.Bom映射表
 https://developer.android.google.cn/jetpack/compose/bom/bom-mapping?hl=zh-cn</br>
+
+# 5.coil网络图片以及gif
+https://coil-kt.github.io/coil/compose/</br>

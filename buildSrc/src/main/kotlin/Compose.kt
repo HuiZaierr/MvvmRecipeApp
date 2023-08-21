@@ -46,10 +46,13 @@ object Compose {
     private const val composeActivitiesVersion = "1.5.1"
     private const val composeCompilerVersion = "1.5.0"
     private const val composeNavigationVerson = "2.7.0"
+    private const val coilComposeVersion = "2.4.0"
 
     const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:${constraintLayoutComposeVersion}"
     const val activity = "androidx.activity:activity-compose:${composeActivitiesVersion}"
     //Jetpack Compose 编译器插件
     const val compiler = "androidx.compose.compiler:compiler:${composeCompilerVersion}"
     const val navigation = "androidx.navigation:navigation-compose:${composeNavigationVerson}"
+    //Image网络图片以及Gif加载库
+    const val coil = "io.coil-kt:coil-compose:${coilComposeVersion}"
 }

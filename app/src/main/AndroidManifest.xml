@@ -15,29 +15,29 @@
 
         <!--android:name=".MainActivity"-->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.leiwo.HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MvvmRecipeApp">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".RecipeActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/app_name"-->
+<!--            android:theme="@style/AppTheme">-->
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
-        </activity>
-
-        <activity
-            android:name=".RecipeActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+<!--        </activity>-->
     </application>
 
 </manifest>
