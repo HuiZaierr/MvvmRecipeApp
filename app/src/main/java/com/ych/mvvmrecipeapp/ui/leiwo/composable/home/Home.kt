@@ -18,10 +18,17 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ych.mvvmrecipeapp.R
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
 
 
 @Composable
 fun Home_TOP_WEATHER() {
+    var flow = flowOf("111","222")
+    flow.map {
+
+    }
     Column(
         Modifier
             .background(color = colorResource(id = R.color.color_1BA200))
