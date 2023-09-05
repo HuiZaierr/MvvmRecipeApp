@@ -37,3 +37,26 @@ Flow流：它分为冷流和热流
         flowOn：指定 Flow 执行的线程。
         buffer：缓存 Flow 中的元素，以便更快地处理它们。
         ```
+
+### build gradle命令：
+```
+./gradlew build：构建项目并生成 APK 文件。
+
+./gradlew assemble：构建项目并生成 APK 文件，但不进行安装。
+
+./gradlew installDebug：构建项目并将 APK 文件安装到设备上。
+
+./gradlew uninstall：卸载设备上的应用程序。
+
+./gradlew clean：清除项目构建产生的文件和目录。
+
+./gradlew test：运行项目的单元测试。
+
+./gradlew lint：运行 Lint 工具，检查项目中的代码问题。
+
+./gradlew dependencies：列出项目的依赖关系。
+
+./gradlew tasks：列出可用的 Gradle 任务。
+
+./gradlew help：显示 Gradle 帮助信息。
+```

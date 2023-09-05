@@ -85,8 +85,9 @@
       // 容器中的内容
     }
     ```
-5. Spacer：间隔符，用于填充一个空白的位置
-6. Image：设置图片
+5. BoxWithConstraints：
+6. Spacer：间隔符，用于填充一个空白的位置
+7. Image：设置图片
     ```
     //显示本地图片
     Image(
